@@ -2,8 +2,10 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
+
 import { AboutComponent }      from './components/about/about.component';
 import { SearchComponent }      from './components/search/search.component';
+import { MovieComponent }      from './components/movie/movie.component';
 
 const appRoutes: Routes = [
     {
@@ -13,7 +15,11 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  }
+  },
+  {
+    path: 'movie/:id',
+    component: MovieComponent
+  },
 
 ];
 
