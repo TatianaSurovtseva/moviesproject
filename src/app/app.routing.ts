@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent }      from './components/about/about.component';
 import { SearchComponent }      from './components/search/search.component';
 import { MovieComponent }      from './components/movie/movie.component';
+import { ListComponent }      from './components/list/list.component';
 
 const appRoutes: Routes = [
     {
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
   {
     path: 'movie/:id',
     component: MovieComponent
+  },
+  {
+  path: 'list',
+  component: ListComponent
   },
 
 ];

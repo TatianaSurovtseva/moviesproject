@@ -1,9 +1,9 @@
 <div *ngIf="movie">
-
-    <header class= "movie-header">
-        <h2> {{movie.title}}</h2> 
+    <header class="movie-header">
+        <h2> {{movie.title}}</h2>
     </header>
-   
-  <h3> {{movie.overview}}</h3> 
-<h4>Relase date: {{movie.release_date}}</h4>
+    <h3> {{movie.overview}}</h3>
+    <h4>Relase date: {{movie.release_date}}</h4>
+    <button (click)="addMovieToList()" style="background: greenyellow; cursor: pointer;">Add to list</button>
+    <a routerLink="/"><button style="background: orangered; cursor: pointer;"> Go back </button></a>
 </div>
